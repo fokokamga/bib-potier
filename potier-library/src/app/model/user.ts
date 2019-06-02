@@ -1,9 +1,10 @@
+
 export class User {
     // attributs
-    private firstName: string;
-    private lastName: string;
-    private email: string;
-    private password: string;
+    private firstName = 'KAMGA';
+    private lastName = 'Florin';
+    private pseudo = 'HPotier2019';
+    private password = 'test-xebia-front';
 
     constructor() { }
 
@@ -25,12 +26,12 @@ export class User {
         this.lastName = lastName;
     }
 
-    getEmail(): string {
-        return this.email;
+    getPseudo(): string {
+        return this.pseudo;
     }
 
-    setEmail(email: string) {
-        this.email = email;
+    setPseudo(pseudo: string) {
+        this.pseudo = pseudo;
     }
     getPassword(): string {
         return this.password;

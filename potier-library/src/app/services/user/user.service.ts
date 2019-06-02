@@ -25,12 +25,12 @@ export class UserService {
     this.myUser.setLastName(lastName);
   }
 
-  getEmail(): string {
-    return this.myUser.getEmail();
+  getPseudo(): string {
+    return this.myUser.getPseudo();
   }
 
-  postEmail(email: string) {
-    this.myUser.setEmail(email);
+  postPseudo(Pseudo: string) {
+    this.myUser.setPseudo(Pseudo);
   }
 
   getPassword(): string {
