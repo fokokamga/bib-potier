@@ -15,6 +15,9 @@ import { CardService } from './services/card/card.service';
 import { User } from './model/user';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotifierModule, NotifierOptions } from 'angular-notifier';
+import { HttpClientModule } from '@angular/common/http';
+import { FilterPipe } from './homepage/filter/filter.pipe';
+import { Book } from './model/book';
 
 const customNotifierOptions: NotifierOptions = {
   position: {
@@ -38,16 +41,18 @@ const customNotifierOptions: NotifierOptions = {
     FooterComponent,
     HomepageComponent,
     BookDetailComponent,
-    ShopCardComponent
+    ShopCardComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NotifierModule.withConfig(customNotifierOptions)
+    NotifierModule.withConfig(customNotifierOptions),
+    HttpClientModule
   ],
-  providers: [UserService, BookService, CardService, User],
+  providers: [UserService, BookService, CardService, User, Book],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

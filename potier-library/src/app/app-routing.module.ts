@@ -6,7 +6,8 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { ShopCardComponent } from './shop-card/shop-card.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
   { path: 'books', component: HomepageComponent },
   { path: 'books/id', component: BookDetailComponent },
   { path: 'card-recap', component: ShopCardComponent }

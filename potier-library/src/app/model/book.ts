@@ -1,6 +1,6 @@
 export class Book {
     private isbn: string;
-    private title: string;
+    public title: string;
     private price: string;
     private cover: string;
     private synopsis: Array<string>;
