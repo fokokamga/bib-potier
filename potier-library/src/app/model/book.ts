@@ -1,9 +1,9 @@
 export class Book {
-    private isbn: string;
-    public title: string;
-    private price: string;
-    private cover: string;
-    private synopsis: Array<string>;
+    isbn: string;
+    title: string;
+    price: string;
+    cover: string;
+    synopsis: Array<string>;
 
     // methodes getter setter
 

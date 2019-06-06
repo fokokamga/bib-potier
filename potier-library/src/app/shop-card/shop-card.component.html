@@ -1,0 +1,66 @@
+<app-header></app-header>
+<!-- cart-main-area start -->
+<div class="container mt-5">
+  <div class="row">
+
+    <div id="carouselExampleIndicators" class="carousel slide ml-3 my-4">
+      <h1>Votre panier </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-sm-12 ol-lg-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Photo</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prix</th>
+            <th scope="col">Quantité</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of items">
+            <td class="product-thumbnail"><a href="#"><img src={{item.cover}} alt="product img"></a></td>
+            <td class="product-name"><a href="#">{{item.title }}</a></td>
+            <td class="product-price"><span class="amount">{{item.price}}</span></td>
+            <td class="product-quantity"><input type="number" value="1"></td>
+            <td class="product-subtotal">{{item.price |currency:'EUR':true}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <!--   <div class="cartbox__btn">
+      <ul class="cart__btn__list d-flex flex-wrap flex-md-nowrap flex-lg-nowrap justify-content-between">
+        <li><a href="#">Coupon Code</a></li>
+        <li><a href="#">Apply Code</a></li>
+        <li><a href="#">Update Cart</a></li>
+        <li><a href="#">Check Out</a></li>
+      </ul>
+    </div> -->
+  </div>
+<!-- 
+  <div class="row">
+    <div class="col-lg-6 offset-lg-6">
+      <div class="cartbox__total__area">
+        <div class="cartbox-total d-flex justify-content-between">
+          <ul class="cart__total__list">
+            <li>Cart total</li>
+            <li>Sub Total</li>
+          </ul>
+          <ul class="cart__total__tk">
+            <li>$70</li>
+            <li>$70</li>
+          </ul>
+        </div>
+        <div class="cart__total__amount">
+          <span>Grand Total</span>
+          <span>$140</span>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>
+
+<!-- cart-main-area end -->
+<app-footer></app-footer>
