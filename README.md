@@ -31,17 +31,17 @@ Une fois l'application lancée, il faudra vous connecter en utilisant les creden
 Pseudo : **HPotier2019**
 Mot de passe: **test-xebia-front**
 
-https://github.com/fokokamga/bib-potier/blob/master/1.png
+ ![img](https://github.com/fokokamga/bib-potier/blob/master/1.png)
 
 Si vous n'entrez pas les bons identifiants, vous recevrez un message d'erreur:
-https://github.com/fokokamga/bib-potier/blob/master/2.png
+![img](https://github.com/fokokamga/bib-potier/blob/master/2.png)
 
 Une fois connecté, vous arriverez sur la page d'accueil. Vous verrez la liste des tous les livres récupérés de puis le backend .
 
 Il est possible de recherche un livre par son nom:
-https://github.com/fokokamga/bib-potier/blob/master/3.png
+![img](https://github.com/fokokamga/bib-potier/blob/master/3.png)
 
 Vous pouvez aussi ajouter un livre au panier:
 
-https://github.com/fokokamga/bib-potier/blob/master/4.png
+![img](https://github.com/fokokamga/bib-potier/blob/master/4.png)
 
