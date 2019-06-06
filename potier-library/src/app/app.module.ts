@@ -41,8 +41,7 @@ const customNotifierOptions: NotifierOptions = {
     FooterComponent,
     HomepageComponent,
     BookDetailComponent,
-    ShopCardComponent,
-    FilterPipe
+    ShopCardComponent
   ],
   imports: [
     BrowserModule,

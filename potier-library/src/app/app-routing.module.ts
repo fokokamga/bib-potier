@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'books', component: HomepageComponent },
-  { path: 'books/id', component: BookDetailComponent },
+  { path: 'books/:isbn', component: BookDetailComponent },
   { path: 'card-recap', component: ShopCardComponent }
 
 ];

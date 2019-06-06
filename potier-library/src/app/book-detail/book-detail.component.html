@@ -1,0 +1,33 @@
+
+<app-header></app-header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-12" >
+
+        <div class="card mt-4">
+          <img class="card-img-top img-fluid" src={{book.cover}} alt="">
+          <div class="card-body">
+            <h3 class="card-title">{{book.title}}</h3>
+            <h4>{{book.price |currency:'EUR':true}}</h4>
+            <p class="card-text">{{book.synopsis}}</p>
+            <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+            4.0 stars
+          </div>
+        </div>
+        <!-- /.card -->
+
+      
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+
+  </div>
+  <!-- /.container -->
+  <app-footer></app-footer>
+
