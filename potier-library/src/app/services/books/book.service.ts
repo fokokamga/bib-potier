@@ -41,7 +41,7 @@ export class BookService {
     .pipe(
       catchError(this.handleError<Book>(`getBook id=${isbn}`))
     );
-   
+
   }
 
 
