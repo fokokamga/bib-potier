@@ -1,6 +1,28 @@
+ <!-- Navigation -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5">
+    <div class="container">
+      <span class="navbar-brand" >Bibliothèque Henri Potier</span>
+     
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" >Accueil
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Panier</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Contact</a>
+          </li>
+       
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-
-<form class="form-signin"[formGroup]="userForm" (ngSubmit)="onSubmitForm()">
+<form class="form-signin mt-5"[formGroup]="userForm" (ngSubmit)="onSubmitForm()">
   <img class="mb-4 " src="../../../assets/logo_library.jpg" alt="" width="72" height="72"style="margin-left: 115px;">
   <h1 class="h3 mb-3 d-flex justify-content-center font-weight-normal">Connectez Vous</h1>
   <label for="inputEmail" class="sr-only">Pseudo</label>
@@ -14,7 +36,6 @@
   </div> -->
   <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="userForm.invalid">Connexion</button>
 </form>
-<span>{{'3'+5*'2'}}</span>
 <notifier-container></notifier-container>
 <app-footer></app-footer>
 
