@@ -4,6 +4,10 @@ import { Book } from '../model/book';
 import { BookService } from '../services/books/book.service';
 import { HttpClient } from '@angular/common/http';
 import { ArrayType } from '@angular/compiler';
+import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { routerNgProbeToken } from '@angular/router/src/router_module';
+import { CardService } from '../services/card/card.service';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -30,8 +34,10 @@ export class HomepageComponent implements OnInit {
 
 
   constructor(private userService: UserService,
-              private bookService: BookService
-  ) { }
+              private bookService: BookService,
+              private cardService: CardService,
+              private router: Router,
+              ) { }
 
   ngOnInit() {
     this.getAllBooks();
@@ -53,7 +59,12 @@ export class HomepageComponent implements OnInit {
       },
         error => this.errorMessage = error as any);
   }
-
+  addToCart(book) {
+    window.alert('Votre livre a bien été ajouté au panier');
+    this.cardService.addToCard(book);
+    localStorage.setItem('book', JSON.stringify(book));
+    this.router.navigate(['/card-recap']);
+   }
 
 
 }
